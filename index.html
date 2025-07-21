@@ -1,50 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smita Ashok – Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 2rem; max-width: 800px; }
-    h1 { color: #004c99; }
-    h2 { color: #333; margin-top: 2rem; }
-    a { color: #007acc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #4ea1ff;
+    }
+
+    h2 {
+      color: #ffffff;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.3rem;
+      margin-top: 2.5rem;
+    }
+
+    a {
+      color: #4ea1ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .work-sample {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .work-sample img {
+      width: 80px;
+      height: auto;
+      flex-shrink: 0;
+      margin-top: 0.3rem;
+    }
+
+    .work-sample ul {
+      margin: 0;
+      padding-left: 1rem;
+      list-style: disc;
+    }
+
+    .contact-info p {
+      margin: 0.2rem 0;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      .work-sample {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .work-sample img {
+        margin-bottom: 0.5rem;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>Smita Ashok</h1>
-  <p><strong>Senior Technical Writer | Chennai, India</strong></p>
+  <p><strong>Senior Technical Writer | India</strong></p>
 
   <h2>About Me</h2>
   <p>
     I'm a senior technical writer with a decade of experience in the SaaS industry. I enjoy working on user education, API documentation, and building scalable content systems. I'm currently working at Zuora and exploring AI-assisted documentation solutions to improve content velocity and usability.
   </p>
 
-  <h2>Work Samples - Zuora</h2>
-  <ul>
-    <li><a href="https://developer.zuora.com/v1-api-reference/api/tag/Data-Labeling/">API Reference – Data Labeling (Zuora)</a></li>
-    <li><a href="https://knowledgecenter.zuora.com/Zuora_Billing">Zuora Billing (Heretto DITA Restructure)</a></li>
-    <li><a href="https://knowledgecenter.zuora.com/Releases/47_2024_releases/23_Zuora_Release_2024.07.R1">Release Notes Framework – Before </a></li>
-    <li><a href="https://knowledgecenter.zuora.com/Releases/2025_releases/Zuora_2025.Q1_release_notes">Release Notes Framework – After</a></li>
-    <li><a href="https://knowledgecenter.zuora.com/Zuora_Platform">Taxonomy for Zuora Platform</a></li>
-  </ul>
+  <h2>Work Samples – Zuora</h2>
+  <div class="work-sample">
+    <img src="images/Zuora Logo.png" alt="Zuora Logo">
+    <ul>
+  
+      <li><a href="https://knowledgecenter.zuora.com/Zuora_Billing">Zuora Billing (Heretto DITA Restructure)</a></li>
+      <li><a href="https://knowledgecenter.zuora.com/Zuora_Platform">Taxonomy for Zuora Platform</a></li>
+      <li><a href="https://knowledgecenter.zuora.com/Releases/47_2024_releases/23_Zuora_Release_2024.07.R1">Release Notes Framework – Before</a></li>
+      <li><a href="https://knowledgecenter.zuora.com/Releases/2025_releases/Zuora_2025.Q1_release_notes">Release Notes Framework – After</a></li>
+      <li><a href="https://developer.zuora.com/v1-api-reference/api/tag/Data-Labeling/">Sample API Reference – Data Labeling</a></li>
+      
+    </ul>
+  </div>
 
-  <h2>Work Samples - Trainn</h2>
-  <ul>
-    <li><a href="https://trainn.co/blog/accelerating-product-adoption-beyond-the-first-session/">Product blog</a></li>
-    <li><a href="https://trainn.co/blog/who-owns-product-adoption/">SEO marketing blog</a></li>
-  </ul>
+  <h2>Work Samples – Trainn</h2>
+  <div class="work-sample">
+    <img src="images/Trainn logo.png" alt="Trainn Logo">
+    <ul>
+      <li><a href="https://trainn.co/blog/accelerating-product-adoption-beyond-the-first-session/">Product blog</a></li>
+      <li><a href="https://trainn.co/blog/who-owns-product-adoption/">SEO marketing blog</a></li>
+    </ul>
+  </div>
 
-  <h2>Work Samples - Zoho</h2>
-  <ul>
-    <li><a href="https://www.zoho.com/in/books/help/documents/documents.html">Feature documentation</a></li>
-    <li><a href="https://help.zoho.com/portal/en/kb/creator/developer-guide/pages">End-to-end user guide</a></li>
-    <li><a href="https://www.zoho.com/creator/newhelp/account-setup/understand-sender-email-domain-authentication.html">Concept Topic</a></li>
-    <li><a href="https://help.zoho.com/portal/en/kb/creator/developer-guide/zml-guide">Reference Guide for developers</a></li>
-    <li><a href="https://www.zoho.com/blog/salesiq/accelerating-the-intent-of-gdpr.html">Product blog 1</a></li>
-    <li><a href="https://www.zoho.com/blog/salesiq/stay-safe-and-in-touch.html">Product blog 2</a></li>
-    <li><a href="https://www.zoho.com/blog/salesiq/salesiqs-audio-call-and-screen-share.html">Product blog 3</a></li>
-  </ul>
+  <h2>Work Samples – Zoho</h2>
+  <div class="work-sample">
+    <img src="images/Zoho logo.png" alt="Zoho Logo">
+    <ul>
+      <li><a href="https://www.zoho.com/in/books/help/documents/documents.html">Feature documentation</a></li>
+      <li><a href="https://help.zoho.com/portal/en/kb/creator/developer-guide/pages">End-to-end user guide</a></li>
+      <li><a href="https://www.zoho.com/creator/newhelp/account-setup/understand-sender-email-domain-authentication.html">Concept Topic</a></li>
+      <li><a href="https://help.zoho.com/portal/en/kb/creator/developer-guide/zml-guide">Reference Guide for developers</a></li>
+      <li><a href="https://www.zoho.com/blog/salesiq/accelerating-the-intent-of-gdpr.html">Product blog 1</a></li>
+      <li><a href="https://www.zoho.com/blog/salesiq/stay-safe-and-in-touch.html">Product blog 2</a></li>
+      <li><a href="https://www.zoho.com/blog/salesiq/salesiqs-audio-call-and-screen-share.html">Product blog 3</a></li>
+    </ul>
+  </div>
 
   <h2>Community & Volunteering</h2>
   <ul>
@@ -54,8 +131,10 @@
   </ul>
 
   <h2>Get in Touch</h2>
-  <p>Email: <a href="mailto:ashoksmita.v@gmail.com">ashoksmita.v@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/smitaashok/" target="_blank">linkedin.com/in/smita-ashok</a></p>
-  <p>GitHub: <a href="https://github.com/Smita-Ashok/smita-authoring-clarity" target="_blank">github.com/Smita-Ashok</a></p>
+  <div class="contact-info">
+    <p>Email: <a href="mailto:ashoksmita.v@gmail.com">ashoksmita.v@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/smitaashok/" target="_blank">linkedin.com/in/smita-ashok</a></p>
+    <p>GitHub: <a href="https://github.com/Smita-Ashok/smita-authoring-clarity" target="_blank">github.com/Smita-Ashok</a></p>
+  </div>
 </body>
 </html>
