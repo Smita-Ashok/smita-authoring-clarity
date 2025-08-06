@@ -75,7 +75,38 @@
         margin-bottom: 0.5rem;
       }
     }
+
+   /* Accordion styles */
+details {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  color: #4ea1ff;
+}
+
+summary:hover {
+  color: #82c4ff;
+}
+
+details[open] summary::after {
+  content: " ▲";
+}
+
+summary::after {
+  content: " ▼";
+} 
   </style>
+  
 </head>
 <body>
   <h1>Smita Ashok</h1>
@@ -98,6 +129,7 @@
     <p><strong>Welcome to my portfolio — where the docs are clean, the sarcasm is subtle, and the Oxford commas are a non-negotiable. ☕🚀</strong></p>
   </div>
 </div>
+  <details>
 
   <h2>🚀 Core Competencies & Technical Proficiencies</h2>
 
@@ -111,7 +143,7 @@
   <li><strong>Publishing platforms:</strong> MindTouch, Drupal, GitBook, WordPress</li>
   <li>End-to-end documentation project ownership</li>
 </ul>
-
+  
 <h3> 🔁 Workflow & Project Management</h3>
 <ul>
   <li>Agile/Scrum documentation delivery</li>
@@ -146,13 +178,15 @@
   <li>In-app experience design and onboarding flows using <strong>UserPilot</strong></li>
   <li>Collaboration with PM and UX teams for adoption-focused, persona-based content</li>
 </ul>
-
+  </details>
+ <details> 
 <h3>🗣️ Language Proficiency</h3>
 <ul>
   <li>English – CEFR Level C2 (IELTS 8.5)</li>
 </ul>
+ </details>
 
-
+  <details>
   <h2>Work Samples – Zuora</h2>
   <div class="work-sample">
     <img src="images/Zuora Logo.png" alt="Zuora Logo">
@@ -168,7 +202,8 @@
       
     </ul>
   </div>
-
+  </details>
+  <details>
   <h2>Work Samples – Trainn</h2>
   <div class="work-sample">
     <img src="images/Trainn logo.png" alt="Trainn Logo">
@@ -177,7 +212,8 @@
       <li><a href="https://trainn.co/blog/who-owns-product-adoption/">SEO marketing blog</a></li>
     </ul>
   </div>
-
+  </details>
+  <details>
   <h2>Work Samples – Zoho</h2>
   <div class="work-sample">
     <img src="images/Zoho logo.png" alt="Zoho Logo">
@@ -191,20 +227,30 @@
       <li><a href="https://www.zoho.com/blog/salesiq/salesiqs-audio-call-and-screen-share.html">Product blog 3</a></li>
     </ul>
   </div>
-
+  </details>
+  <details>
   <h2>Certifications and Language Proficiency</h2>
   <ul>
     <li>Oxygen XML and DITA training certification by TWT</li>
   </ul>
-
-  <h2>Community & Volunteering</h2>
+  </details>
+  <details>
+<h2>Community & Volunteering</h2>
   <ul>
     <li>Tech Writers Tribe – Chennai Chapter Volunteer & Workshop Speaker and Facilitator</li>
     <li>Wonders ERG India Lead – Zuora</li>
     <li>Volunteer at SWE Chennai Chapter</li>
     <li>Former speaker and presenter at Zoholics, Zoho’s Annual Global Customer Conference</li>
   </ul>
-
+  </details>
+  <details>
+  <summary>🎓 Education</summary>
+  <ul>
+    <li><strong>Master of Computer Applications (MCA)</strong><br />
+        Anna University, Chennai<br />
+        CGPA: 8.3 / 10</li>
+  </ul>
+</details>
   <h2>Get in Touch</h2>
   <div class="contact-info">
     <p>Email: <a href="mailto:ashoksmita.v@gmail.com">ashoksmita.v@gmail.com</a></p>
