@@ -105,12 +105,26 @@ details[open] summary::after {
 summary::after {
   content: " ➖";
 } 
+
+.header-banner img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* optional: constrain height */
+  border-radius: 8px; /* optional: rounded corners */
+  object-fit: cover; /* ensures image scales nicely */
+}
+
+.header-banner {
+  margin-bottom: 2rem;
+}
+    
   </style>
   
 </head>
 <body>
-  <h1>Smita Ashok</h1>
-  <p><strong>Senior Technical Writer | India</strong></p>
+  <div class="header-banner">
+  <img src="images/Header Image for portfolio.png" alt="Banner with Smita Ashok – Senior Technical Writer" />
+</div>
 
  <h2>💁‍♀️ About Me</h2>
 <div style="display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap;">
