@@ -122,13 +122,6 @@ summary::after {
   
 </head>
 <body>
-
-  <div id="theme-buttons" style="margin-bottom: 1rem;">/* BG Color */
-  <button data-color="#121212" style="background-color:#121212; color:white; padding:6px 12px; border:none; border-radius:4px;">Dark</button>
-  <button data-color="#ffffff" style="background-color:#ffffff; color:black; padding:6px 12px; border:1px solid #ccc; border-radius:4px;">Light</button>
-  <button data-color="#002B5B" style="background-color:#002B5B; color:white; padding:6px 12px; border:none; border-radius:4px;">Blue</button>
-  <button data-color="#4B0082" style="background-color:#4B0082; color:white; padding:6px 12px; border:none; border-radius:4px;">Indigo</button>
-</div>
   
   <div id="theme-buttons" style="margin-bottom: 1rem;">
   <button data-color="#121212" style="background-color:#121212; color:white; padding:6px 12px; border:none; border-radius:4px;">Dark</button>
@@ -305,26 +298,6 @@ summary::after {
     <p>LinkedIn: <a href="https://www.linkedin.com/in/smitaashok/" target="_blank">linkedin.com/in/smita-ashok</a></p>
     <p>GitHub: <a href="https://github.com/Smita-Ashok/smita-authoring-clarity" target="_blank">github.com/Smita-Ashok</a></p>
   </div>
-
-<script>
-  const buttons = document.querySelectorAll('#theme-buttons button');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', function() {
-      document.body.style.backgroundColor = this.getAttribute('data-color');
-      localStorage.setItem('bgColor', this.getAttribute('data-color'));
-    });
-  });
-
-  // Load saved color when the page loads
-  window.addEventListener('load', () => {
-    const savedColor = localStorage.getItem('bgColor');
-    if (savedColor) {
-      document.body.style.backgroundColor = savedColor;
-    }
-  });
-</script>
-
       
 </body>
 </html>
